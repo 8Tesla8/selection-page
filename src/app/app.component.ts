@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  public listVisability = false;
+  public showList(): void {
+      this.listVisability = true;
+  }
+  public hideList(): void {
+      this.listVisability = false;
+  }
 }

@@ -1,0 +1,6 @@
+<button mat-icon-button (click)="showList()">
+    Show list
+</button>
+
+<selection-list *ngIf="listVisability" (closeBtnClick)="hideList()">
+</selection-list>

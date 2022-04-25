@@ -3,7 +3,7 @@
     <div class="content-center">
 
         <div class="grid">       
-            <div *ngFor="let item of selectionList" class="app-btn" (click)="onItemClick(item)">
+            <div *ngFor="let item of selectionList" class="list-btn" (click)="onItemClick(item)">
                 <img *ngIf="item.icon" src="{{item.icon}}">
                 {{item.title}}
             </div>                       
@@ -12,6 +12,6 @@
         <div class="logo"></div>  
     </div>
 
-    <div class="app-btn close" (click)="onCloseBtnClick()">X</div>
+    <div class="list-btn close" (click)="onCloseBtnClick()">X</div>
 
 </div>
